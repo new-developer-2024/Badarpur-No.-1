@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', Times, serif;
         }
         header {
             height: 100vh;
@@ -23,12 +23,12 @@
         header h1 {
             font-size: 3rem;
             margin: 0;
-            color: orange;
+            color: rgb(98, 0, 255);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         header p {
             font-size: 1.5rem;
-            color: orange;
+            color: rgb(153, 0, 255);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .ashok-chakra {
@@ -39,7 +39,7 @@
             opacity: 0.9;
             animation: rotate 10s linear infinite;
             margin: 20px auto;
-            border: 5px solid transparent; /* Transparent border */
+            border: 0px solid transparent; /* Transparent border */
         }
 
         /* Keyframes for the rotation effect */
@@ -110,13 +110,9 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            top: 50%; /* Vertical center of the screen */
+            left: 50%; /* Horizontal center of the screen */
+            transform: translate(-50%, -50%); /* Offset by 50% of its width/height */
         }
 
         /* Dialog Box */
@@ -191,7 +187,7 @@
         <div class="login-form">
             <h2>Login</h2>
             <form action="#" method="post">
-                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="username" placeholder="Mobile Number" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Login</button>
                 <a href="#">Forgot Password?</a>
