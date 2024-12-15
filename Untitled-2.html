@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badarpur No. 1 NCC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header {
+            height: 100vh;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-cHMhXhr2sP7dWiMIxOCzFmtmImHwSpPtA&s') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding-top: 100px; /* Adjusted padding for alignment */
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: rgb(247, 245, 243);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.5rem;
+            color: rgb(245, 244, 241);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            position: relative;
+            top: -30px; /* Adjusted positioning */
+            width: 100%;
+            height: 100%;
+        }
+        .ashok-chakra {
+            width: 150px;
+            height: 150px;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4D5p45b_eobq04fo5Xx-ukonm7Ki6_2zZ9w&s') no-repeat center center/contain;
+            opacity: 1;
+            position: centre;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white; /* White background */
+            animation: rotate 10s linear infinite; /* Rotate animation */
+        }
+
+        /* Keyframes for the rotation effect */
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .login-form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            position: absolute;
+            top: 20px; /* Adjust this value for vertical position */
+            right: 20px; /* Positioned at top-right corner */
+        }
+        .login-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form button {
+            background: #002654;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .login-form button:hover {
+            background: #004080;
+        }
+        .login-form a {
+            display: block;
+            margin-top: 10px;
+            color: #002654;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #540042;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <h1>Badarpur No. 1 NCC</h1>
+            <p>"Unity and Discipline"</p>
+        </div>
+        <div class="main-container">
+            <div class="ashok-chakra"></div>
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <p>&copy; 2024 Badarpur No. 1 NCC. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
